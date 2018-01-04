@@ -1,0 +1,136 @@
+body{
+	background-color: #fff !important;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(imgs/38797003-paint-wallpapers.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed; 
+	z-index: 100;
+}
+.home-navbar{
+	background: #fff !important;
+	z-index: 1000 !important;
+}
+.home-navbar-logo img{
+	width: 200px;
+	height: 40px;
+}
+.home-navbar-link{
+	color: #28a745;
+}
+.home-navbar-link:hover{
+	color: #37d101;
+}
+.home-navbar-search input{
+	border-color: #28a745;
+	text-align: center;
+	color: #28a745 !important;
+}
+.home-navbar-search input:focus{
+	border-color: #28a745;
+	text-align: center;
+	color: #28a745 !important;
+}
+.home-top-section{
+	padding-bottom: 2em;
+	background-color: transparent;
+	width: 100%!important;
+	padding-top: 8em;
+	padding-left: 3em !important;
+	padding-right: 3em !important;
+}
+.home-item-sec{
+	background-color: #fff !important;
+	text-align: center;
+	margin:	 0 auto;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 2em;
+	box-shadow: 0.8px 0.8px 0.8px 0.8px grey;
+}
+.home-item-sec h4{
+	color: #28a745;
+	text-decoration: blink;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.home-item-sec img{
+	width: 50% !important;
+	height: 200px !important;
+	border-radius: 5px;
+	transition: ease-out 3s;
+}
+.home-item-sec img:hover{
+	width: 80% !important;
+	height: 300px !important;
+	border-radius: 5px !important;
+	z-index: 100 !important;
+	background-color: red !important;
+	transition: ease-in 1s;
+}
+
+
+.home-contact-section{
+	width: 100%;
+	height: 300px;
+}
+.home-about-section{
+	position: relative;
+	width: 100%;
+	height: 70%;
+	background-color: #fff;
+	color: #28a745;
+	z-index: 0 !important;
+}
+.home-about-section-container{
+	position: absolute;
+	top: 50% !important;
+	left: 50% !important;
+	transform: translate(-50%,-50%);
+}
+.home-about-img{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	float: none;
+}
+.home-about-img img{
+	width: 200px;
+	height: 200px;
+}
+.footer-social{
+	text-align: center !important;
+	margin: 0 auto !important;
+}
+.footer-social-i{
+	background-color: #fff !important;
+	color: #28a745 !important;
+	width: 30px;
+	height: 30px;
+	padding: 5.5px;
+}
+.home-modal{
+	position: relative !important;
+	top: 100% !important;
+	left: 50% !important;
+	transform: translate(-50%,0%) !important;
+	width: 1000px !important;
+	background-color: #fff !important;
+	padding: 10px !important;
+}
+.home-modal img{
+	background-color: #fff !important;
+	width: 350px !important;
+	height: 350px !important;	
+}
+.home-modal h4{
+	text-align: center !important;
+	color: #28a745 !important;
+}
+.home-modal p{
+	text-align: center !important;
+	color: #28a745 !important;
+}
+.modal-lg{
+	width: 1000px !important;
+}
