@@ -5,178 +5,492 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <title>Sparkle | Home</title>
     <link href="sparkle-min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css?ver=4.4.2'>
+<link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/Ladda/0.9.8/ladda.min.css'>
+      <link rel="stylesheet" href="css/style.css">
+
+    <!-- <link rel="icon" href="imgs/\" class="fa fa-home"> -->
 </head>
 <body>
     <!-- our navbar -->
-     <nav class="navbar navbar-expand-sm home-navbar fixed-top">
-      <a class="navbar-brand home-navbar-logo" href="#"><img src="imgs/nav-logo.png"></a>
-      <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa fa-bars text-success"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExample03">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link home-navbar-link" href="#"><i class="fa fa-shopping-cart my-auto"></i> Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link home-navbar-link" href="#"><i class="fa fa-flask"></i> Lab</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link home-navbar-link" href="#"><i class="fa fa-archive"></i> Store</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="mr-5 nav-link home-navbar-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-book"></i> Catalogue</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown03">
-              <a class="dropdown-item text-success text-center" href="#">Emulsion</a>
-              <a class="dropdown-item text-success text-center" href="#">Texcot</a>
-              <a class="dropdown-item text-success text-center" href="#">Gloss</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown"><a href="#" class="btn btn-success btn-lg" data-toggle="modal" data-target="#details-7">Cheack cart <i class="fa fa-shopping-cart"></i></a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="home-top-section col-lg-12" >
-      <div class="col-md-2">      </div>
-
-
-
-      <!-- ############## -->
-        <div class="row home-item-sec">
-          <h4 class="col-lg-12 text-center text-success">INTERIOR PAINTS<hr></h4>
-          <div class="col-lg-4">
-            <img src="imgs/emulsion-int.jpg" alt="jeans" id="images" />
-            <p class="text-success">White and colored emulsion</p>
-            <i class="list-price text-danger">Price <s>$5,500</s></i>
-            <p class="price text-success">our price: $4,200</p>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
-          </div>
-
-
-          <div class="col-lg-4">
-            <img src="imgs/texcote-int.jpg" alt="jeans" id="images" />
-            <p class="text-success">White and colored texcote</p>
-            <i class="list-price text-danger">Price <s>$7,000</s></i>
-            <p class="price text-success">our price: $6,000</p>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-2">Details</button>
-          </div>
-
-
-          <div class="col-lg-4">
-            <img src="imgs/gloss1.jpg" alt="jeans" id="images" />
-            <p class="text-success">White and colored gloss</p>
-            <i class="list-price text-danger">Price <s>$4,990</s></i>
-            <p class="price text-success">our price: $4,500</p>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-3">Details</button>
-          </div>
-
-        </div>
-
-
-
-        <div class="row home-item-sec">
-                <?php if (!empty($msg)): ?>
-                  <div class="<?php echo $msgClass; ?>"><?php echo $msg; ?></div>
-                <?php endif ?>
-          <h4 class="col-lg-12 text-center text-success">EXTERIOR PAINTS<hr></h4>
+     <nav class="navbar-extended green-body fixed-top">
+    <div class="nav-content home-navbar-sec2">
+      <ul class="tabs tabs-transparent">
+        <li class="tab">
           
-          <div class="col-lg-4 mb-4">
-            <img src="imgs/emulsion-int.jpg" alt="jeans" id="images" />
-
-            <p class="text-success">White and colored emulsion</p>
-            <i class="list-price text-danger">Price <s>$10,000</s></i>
-            <p class="price text-success">Our price: $8,500</p>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-4">Details</button>
-          </div>
-
-
-          <div class="col-lg-4">
-            <img src="imgs/texcote2.jpg" alt="jeans" id="images" />
-            <p class="text-success">White and colored texcote</p>
-            <i class="list-price text-danger">Price <s>$12,000</s></i>
-            <p class="price text-success">Our price: $10,500</p>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-5">Details</button>
-          </div>
+      <h4 class="ml-3 navbar-brand home-navbar-logo white-text" href="#">Sparkle</h4>
+        </li>
+        <li class="tab"><a href="#test1" class="active white-text"><i class="fa fa-home"></i> Home</a></li>
+        <li class="tab"><a class="white-text" href="#test2"><i class="fa fa-flask"></i> Lab</a></li>
+        <li class="tab"><a href="#test3" class="white-text"><i class="fa fa-archive"></i> Store</a></li>
+        <li class="tab"><a href="#test4" class="white-text"><i class="fa fa-book"></i> Catelogue</a></li>
+      </ul>
+    </div>
 
 
-          <div class="col-lg-4">
-            <img src="imgs/gloss2.jpg" alt="jeans" id="images" />
-            <p class="text-success">White and colored gloss</p>
-            <i class="list-price text-danger">Price <s>$4.990</s></i>
-            <p class="price text-success">Our price: $4,500  </p>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-6">Details</button>
-          </div>
+    <ul>
+      <li>
+         <a class="cart-icon" style="z-index: 1500; top: 100px !important;">
+      <span id="totalItems">0</span>
+      <ul class="cart"></ul>
+    </a>
+      </li>
+    </ul>
+    </nav>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="test1" class="col s12">
+       <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="imgs/bg1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
+      </li>
+      <li>
+        <img src="imgs/bg1.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="imgs/bg1.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
 
+  <script type="text/javascript">
+     $(document).ready(function(){
+      $('.slider').slider();
+    });
+        
+// Pause slider
+$('.slider').slider('pause');
+// Start slider
+$('.slider').slider('start');
+// Next slide
+$('.slider').slider('next');
+// Previous slide
+$('.slider').slider('prev');
+  </script>
+
+
+          <div class="container home-contact-section text-center">
+            <div class="container text-center">
+        <div class="container col-lg-12 mt-5">
+          <div class="row">
+            <div class="col-lg-6 green-font">
+              <h4>About us <hr class="green-font"></h4>
+              <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</q>
+            </div>
+            <div class="col-lg-6">
+              <form class="form-group">
+                <div class="col-lg-12">
+                  <textarea type="text" id="report" class="form-control text-center text-success" placeholder="..." style="height: 150px;margin-bottom: 0.2em;"></textarea>
+                  <button type="submit" class="btn green-body text-white form-control">Write To Us</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
 
-      <div class="container home-contact-section text-center">
-        <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a>
-        <br>
-        <button type="button" class="btn btn-success btn-lg">Contact us</button>
-      </div>
 
-
-      <div class="home-about-section">
+      <div class="home-about-section green-body">
         <div class="home-about-section-container">
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="rounded-circle home-about-img">
+                <div class="col s4">
+                    <div class="circle home-about-img">
                         <img src="imgs/ss.jpg" class="rounded-circle">
                     </div>
                 </div>
-                <div class="col-lg-8 text-center text-success">
+                <div class="col s8 text-center white-text ">
                     <q>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, laborum.
                     </q><br><br>
-                        <a href="#" class="btn btn-success btn-lg">Contact Us</a>
+                        <a href="#" class="btn white green-font ">Contact Us</a>
                 </div>
             </div>
         </div>
       </div>
 
-      <div class="container home-contact-section text-center">
 
-      </div>
+        <div class="container white" style="width: 100%; height: 300px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
 
 
-      <footer class="home-footer bg-success">
+
+      <footer class="home-footer green-body">
         <div class="text-white text-center">
           Sparklepaints.co@2018
           <p>Like our Social platforms@ <a href="#">Sparkle_paints</a></p>
           <div class="container footer-social">
-            <i class="fa fa-facebook footer-social-i rounded-circle"></i>
-            <i class="fa fa-instagram footer-social-i rounded-circle"></i>
-            <i class="fa fa-twitter footer-social-i rounded-circle"></i>
+            <i class="fa fa-facebook footer-social-i rounded-circle green-body white-text"></i>
+            <i class="fa fa-instagram footer-social-i rounded-circle green-body white-text"></i>
+            <i class="fa fa-twitter footer-social-i rounded-circle green-body white-text"></i>
           </div>
         </div>
       </footer>
-
-      <?php
-        include 'emulsion-int-details.php';
-        include 'texcote-int-details.php';
-        include 'gloss-int-details.php';
-        include 'emulsion-ext-details.php';
-        include 'texcote-ext-details.php';
-        include 'gloss-ext-details.php';
-        include 'added-items.php';
-      ?>
+  </div>
+</div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="test2" class="col s12 mt-5 green-body" style="padding-top: 3em !important;">
+      <h3 class="brand-logo text-center justify-content-center d-flex my-auto text-white">Interior:</h3>
+      <hr class="container">
+      <div class="container green-font justify-content-center d-flex">
+         <div class="row col-lg-12">
+        <div class="col-lg-4">
+          <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="imgs/emulsion.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">White and colored emulsion:<i class="material-icons right">more_vert</i></span>
+            <p>Price: <s class="text-danger">N10,000 NGN</s></p>
+            <p>Our price: N8,500 NGN</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="imgs/texcote.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">White and colored texcote:<i class="material-icons right">more_vert</i></span>
+            <p>Price: <s class="text-danger">N10,999 NGN</s></p>
+            <p>Our price: N10,500 NGN</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="imgs/gloss.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">White and colored gloss<i class="material-icons right">more_vert</i></span>
+            <p>Price: <s class="text-danger">N5,300 NGN</s></p>
+            <p>Our price: N4,500 NGN</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+        </div>
+
+      </div>
+      </div>
+
+      <h3 class="brand-logo text-center justify-content-center d-flex my-auto text-white">Exterior:</h3>
+      <hr class="container">
+      <div class="container mt-5 green-font  justify-content-center d-flex my-auto">
+        
+         <div class="row col-lg-12">
+        <div class="col-lg-4">
+          <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="imgs/emulsion.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">White and colored emulsion:<i class="material-icons right">more_vert</i></span>
+            <p>Price: <s class="text-danger">N5,000 NGN</s></p>
+            <p>Our price: N4,200 NGN</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="imgs/texcote.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">White and colored texcote:<i class="material-icons right">more_vert</i></span>
+            <p>Price: <s class="text-danger">N6,800 NGN</s></p>
+            <p>Our price: N6,000 NGN</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="imgs/gloss.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">White and colored gloss<i class="material-icons right">more_vert</i></span>
+            <p>Price: <s class="text-danger">N5,300 NGN</s></p>
+            <p>Our price: N4,500 NGN</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+        </div>
+
+      </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="test3" class="col s12 green-body">
+    <div style="height: 100px;">
+        
+    </div>
+    <div class="justify-content-center d-flex my-auto ">
+      
+    <div class="row  pl-5 col-lg-12">
+        <h4 class="text-center text-muted">Store</h4>
+        <hr class="container">
+      <div class="productosWrapper container col s12">
+        
+      </div>
+
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="test4" class="col s12 green-font">
+    
+  </div>
+
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js?ver=1.11.2'></script>
 
     <script src="jquery/jquery.min.js"></script>
     <script src="popper/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Ladda/0.9.8/spin.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Ladda/0.9.8/ladda.min.js'></script>
+<script  src="js/index.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="js/init.js"></script>
 </body>
 </html>

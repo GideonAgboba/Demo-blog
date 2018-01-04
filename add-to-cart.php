@@ -10,7 +10,7 @@
 					$msg= $quantity ." $type" ." has been added to cart!";
 					$msgClass="alert-true";
 					
-					// header("Location: index.php");
+					// header("Location: index.php");	
 				}
 				
 			?>
