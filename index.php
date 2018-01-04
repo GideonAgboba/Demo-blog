@@ -37,7 +37,7 @@
 
     <ul>
       <li>
-         <a class="cart-icon" style="z-index: 1500; top: 100px !important;">
+         <a class="cart-icon" style="z-index: 1500; top: 85px !important;">
       <span id="totalItems">0</span>
       <ul class="cart"></ul>
     </a>
@@ -80,54 +80,81 @@
 
 
 
-  <div id="test1" class="col s12">
-       <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="imgs/bg1.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imgs/bg1.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imgs/bg1.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
+  <div id="test1" class="">
+    <style type="text/css">
+      .cont1{
+        background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url(imgs/bg2.jpg);
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+        width: 100% !important;
+        padding-top: 5em;
+        padding-bottom: 3em;
 
-  <script type="text/javascript">
-     $(document).ready(function(){
-      $('.slider').slider();
-    });
-        
-// Pause slider
-$('.slider').slider('pause');
-// Start slider
-$('.slider').slider('start');
-// Next slide
-$('.slider').slider('next');
-// Previous slide
-$('.slider').slider('prev');
-  </script>
+      }
+      .cont1 img{
+      }
+      .cont1-2{
+        width: 100%;
+      }
+    </style>
+      <div class="container-fluid green-body cont1">
+          <div class=" container">
+            <div class="row col-lg-12 cont1-2">
+              <div class="col-lg-6">
+                <h1 class="white-text text-center">Sparkle.co</h1>
+                
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. 
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <div class="container col-lg-6">
+                <h4 class="white-text text-center">Quick Purchase</h4>
+                <hr class="container">
+
+                <div class="container-fluid">
+                  <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="imgs/all.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Click Order to make purchase: <i class="material-icons right">more_vert</i></span>
+                    <p class="green-font text-center">This section is for users who want to make payments on delivery...</p>
+                    <a href="#" class="container-fluid btn green-body white-text"  data-toggle="modal" data-target="#details-6">Order</a>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Quick purchase:<i class="material-icons right">close</i></span>
+                    <p class="text-center green-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+                </div>
+
+                
+              </div>
+            </div>
+        </div>
+      </div>
 
 
           <div class="container home-contact-section text-center">
@@ -188,7 +215,7 @@ $('.slider').slider('prev');
 
 
 
-      <footer class="home-footer green-body">
+      <footer class="home-footer green-body col-lg-12">
         <div class="text-white text-center">
           Sparklepaints.co@2018
           <p>Like our Social platforms@ <a href="#">Sparkle_paints</a></p>
@@ -480,6 +507,21 @@ $('.slider').slider('prev');
   </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+  <?php
+    include 'quick-order.php';
+  ?>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js?ver=1.11.2'></script>
 
     <script src="jquery/jquery.min.js"></script>

@@ -160,8 +160,9 @@ business_paypal = 'agbobakehinde@gmail.com'; // aquí va tu correo electrónico 
 		wrapper.html('')
 
 		if(undefined == cart || null == cart || cart == '' || cart.items.length == 0){
-			wrapper.html('<li class="green-font">Your basket is empty</li>');
-			$('.cart').css('left','-400%')
+			wrapper.html('<li class="green-font text-center">Your basket is empty</li>');
+			$('.cart').css('left','-630%')
+			$('.cart').css('width','300px')
 		}else{
 			var items = '';
 			_.forEach(cart.items, function(n, key) {
@@ -174,9 +175,10 @@ business_paypal = 'agbobakehinde@gmail.com'; // aquí va tu correo electrónico 
 			});
 
 			//agregar el total al carrito
-			items += '<li id="total">Total : N '+total+' NGN <div id="submitForm"></div></li>'
+			items += '<li class="container-fluid" id="total">Total : N '+total+' NGN <div id="submitForm"></div></li>'
 			wrapper.html(items)
-			$('.cart').css('left','-400%')
+			$('.cart').css('left','-630%')
+			$('.cart').css('width','300px')
 		}
 	}
 
@@ -260,7 +262,7 @@ business_paypal = 'agbobakehinde@gmail.com'; // aquí va tu correo electrónico 
 				i++;
 			})
 
-			statics += dinamic + '<button type="submit" class="pay">Checkout &nbsp;<i class="ion-chevron-right"></i></button></form>'
+			statics += dinamic + '<button type="submit" class="pay mt-1">Checkout <i class="fa fa-angle-right"></i></button></form>'
 
 			wrapper.html(statics)
 		}
