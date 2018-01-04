@@ -12,8 +12,8 @@
     <!-- our navbar -->
      <nav class="navbar navbar-expand-sm home-navbar fixed-top">
       <a class="navbar-brand home-navbar-logo" href="#"><img src="imgs/nav-logo.png"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars text-success"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample03">
@@ -28,13 +28,15 @@
             <a class="nav-link home-navbar-link" href="#"><i class="fa fa-archive"></i> Store</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link home-navbar-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-book"></i> Catalogue</a>
+            <a class="mr-5 nav-link home-navbar-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-book"></i> Catalogue</a>
             <div class="dropdown-menu" aria-labelledby="dropdown03">
               <a class="dropdown-item text-success text-center" href="#">Emulsion</a>
               <a class="dropdown-item text-success text-center" href="#">Texcot</a>
               <a class="dropdown-item text-success text-center" href="#">Gloss</a>
             </div>
           </li>
+
+          <li class="nav-item dropdown"><a href="#" class="btn btn-success btn-lg" data-toggle="modal" data-target="#details-7">Cheack cart <i class="fa fa-shopping-cart"></i></a></li>
         </ul>
       </div>
     </nav>
@@ -77,7 +79,11 @@
 
 
         <div class="row home-item-sec">
+                <?php if (!empty($msg)): ?>
+                  <div class="<?php echo $msgClass; ?>"><?php echo $msg; ?></div>
+                <?php endif ?>
           <h4 class="col-lg-12 text-center text-success">EXTERIOR PAINTS<hr></h4>
+          
           <div class="col-lg-4 mb-4">
             <img src="imgs/emulsion-int.jpg" alt="jeans" id="images" />
 
@@ -164,6 +170,7 @@
         include 'emulsion-ext-details.php';
         include 'texcote-ext-details.php';
         include 'gloss-ext-details.php';
+        include 'added-items.php';
       ?>
 
 

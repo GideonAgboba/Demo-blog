@@ -2,6 +2,9 @@
 
 	<div class="modal-dialog model-lg" home-modal>
 		<div class="modal-content home-modal">
+
+
+
 			<div class="modal-header">
 				<button class="close" type="button" data-dismiss="modal" aria-label="close">
 				<span aria-hidden="true">&times;</span>
@@ -26,31 +29,33 @@
 							<p>Price: $8,500</p>
 							<p>Brand: emulsion</p>
 
-							<form accept="add-to-cart.php" method="post">
+							<form action="add-to-cart.php" method="post">
 								<div class="form-group mb-0">
 									<div class="col-xs-3" id="quantity-label">
 										<label for="quantity">Quantity: </label>
-										<input type="number" name="quantity" id="quantity" class="form-control" />
+										<input type="number" name="quantity" id="quantity" class="form-control" required />
 									</div>
 									<div class="mt-0">
 										<label for="type">Type: </label>
-										<select class="text-success text-center form-control" id="type" name="type">	
+										<select class="text-success text-center form-control" id="type" name="type" required>	
 											<option value=""></option>
-											<option value="">Off-white</option>
-											<option value="">Cyan</option>
-											<option value="">Aquammarin</option>
+											<option value="Off-white emulsion">Off-white</option>
+											<option value="Cyan emulsion">Cyan</option>
+											<option value="Aquammarin emulsion">Aquammarin</option>
 										</select>
 									</div>
 								</div>
+
+								
+							<div class="modal-footer">
+								<button class="btn btn-default" data-dismiss="modal">Close</button>	
+								<button type="submit" name="send" class="btn btn-success"><span class="fa fa-shopping-cart"></span> Add to cart</button>
+							</div>
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-				<div class="modal-footer">
-					<button class="btn btn-default" data-dismiss="modal">Close</button>	
-					<button type="submit" class="btn btn-success"><span class="fa fa-shopping-cart"></span> Add to cart</button>
-				</div>
 		</div>
 	</div>
 
